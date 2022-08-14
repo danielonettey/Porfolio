@@ -13,7 +13,7 @@ const ExperienceSection = () => {
             <div className='sm:grid sm:grid-cols-7'>
                 <ExperienceTabs experiences={experiences} setCurrentTab={setCurrentTab} currentTab={currentTab} />
                 <ExperienceDetailCard title={experiences[currentTab].title} company={experiences[currentTab].company}
-                    duration={experiences[currentTab].duration} roles={experiences[currentTab].roles} 
+                    duration={experiences[currentTab].duration} roles={experiences[currentTab].roles}
                     extra={experiences[currentTab].extra} />
             </div>
         </div>
@@ -53,16 +53,19 @@ const ExperienceDetailCard = ({ title, company, duration, roles, extra }) => {
 
 const ExperienceTabs = ({ experiences, setCurrentTab, currentTab }) => {
     return (
-        <div className='flex flex-col col-span-2'>
-            {
-                experiences.map((experience, index) => (
-                    <button className={`border-l-2 pl-3 sm:pl-5 text-left text-xs sm:text-sm py-1.5 sm:py-3 
+        <div className='sm:col-span-2 w-full sm:w-auto overflow-x-auto sm:overflow-visible scroll-smooth no-scrollbar'>
+            <div className='flex flex-row sm:flex-col col-span-2 w-[calc(150%)] sm:w-auto pb-4 sm:pb-0'>
+                {
+                    experiences.map((experience, index) => (
+                        <button className={`border-t-2 border-l-0 sm:border-t-0 sm:border-l-2 px-3 sm:pl-5 sm:pr-0
+                    text-center sm:text-left text-xs sm:text-sm py-1.5 sm:py-3 
                              ${index === currentTab ? 'border-secondary font-medium' : 'text-white/50 border-white/20'}`}
-                        key={index} onClick={() => setCurrentTab(index)}>
-                        {experience.company}
-                    </button>
-                ))
-            }
+                            key={index} onClick={() => setCurrentTab(index)}>
+                            {experience.company}
+                        </button>
+                    ))
+                }
+            </div>
         </div>
     )
 }

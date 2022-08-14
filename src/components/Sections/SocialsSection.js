@@ -8,20 +8,20 @@ const SocialsSection = () => {
     const socialLinks = [
         {
             image: GithubIcon,
-            url: '',
+            url: 'https://github.com/danielonettey/',
         },
         {
             image: LinkedInIcon,
-            url: '',
+            url: 'https://www.linkedin.com/in/danielnettey/',
         },
         {
             image: EmailIcon,
-            url: '',
+            url: 'mailto:dnettey3@gmail.com',
         },
     ]
     return (
         <>
-            <div className='hidden sm:flex fixed bottom-0 space-y-6 left-10 flex-col items-center'>
+            <div className='hidden lg:flex fixed bottom-0 space-y-6 left-10 flex-col items-center z-40'>
                 {
                     socialLinks.map((socialLink, index) => (
                         <a href={socialLink.url} key={index} target="_blank" className="cursor-pointer">
@@ -29,12 +29,10 @@ const SocialsSection = () => {
                         </a>
                     ))
                 }
-
                 <div className='h-28 w-px bg-white'></div>
-
             </div>
 
-            <div className='hidden sm:flex fixed bottom-0 flex-col items-center right-0'>
+            <div className='hidden lg:flex fixed bottom-0 flex-col items-center right-0 z-40'>
                 <a href='mailto:danielonettey@gmail.com' className='rotate-90 mb-28 text-sm text-white/80 hover:text-secondary'>
                     danielonettey@gmail.com
                 </a>  

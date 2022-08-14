@@ -10,7 +10,6 @@ module.exports = {
         secondary: '#64ffda',
         backColor: '#0E192D'
       }
-
     },
   },
   plugins: [
