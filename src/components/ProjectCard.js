@@ -1,40 +1,46 @@
+import { CodeIcon } from '@heroicons/react/outline'
+import { LinkIcon } from '@heroicons/react/solid'
 import React from 'react'
-import GithubIcon from '../assets/icons/GitHubIcon.svg'
+import GithubIcon from '../assets/icons/GitHubIcon.png'
+import ComputerIcon from '../assets/icons/ComputerIcon.png'
 
-const ProjectCard = ({ image, name, description, hosted, resources, right }) => {
+
+const ProjectCard = ({ image, name, description, demo, github, resources, right }) => {
     return (
-        <div className='flex items-center'>
+        <div className='sm:flex items-center'>
             {/* Image of Project */}
-            <div className='md:w-2/3'>
+            <div className=' md:w-2/3'>
                 <img src={image} className='w-full z-0' />
             </div>
 
-            <div className={`md:w-1/3 ${right ? 'text-right ' : 'order-first text-left z-10'} `}>
-                <p className=' text-secondary font-medium pb-2'>Featured Project</p>
-                <p className='hover:text-secondary font-semibold text-3xl'>{name}</p>
-                <div className={`${right ? '-ml-32' : '!-mr-32'} bg-[#112240] my-4  py-7 px-5 rounded shadow`}>
-                    <p className='text-white/60 '>
+            <div className={`md:w-1/3 text-center ${right ? 'sm:text-right' : 'sm:text-left order-first z-20'} `}>
+                <p className=' text-secondary font-medium pt-2 sm:py-2 text-xs sm:text-base'>Featured Project</p>
+                <p className='hover:text-secondary font-semibold text-xl sm:text-3xl'>{name}</p>
+                <div className={`${right ? 'sm:-ml-32' : 'sm:-mr-32'} bg-[#112240] my-2 sm:my-4 px-2 py-4 sm:py-7 sm:px-5 rounded shadow`}>
+                    <p className='text-white/60 text-sm sm:text-[15px]'>
                         {description}
                     </p>
                     {/* <p className='text-white pt-2'>This is hosted on the netlify platform.</p> */}
                 </div>
-                <div className='px-2 flex justify-between text-white/70 font-medium text-xs'>
-                    <p className='divide-x divid space-x-2'>
-                      {
-                        resources.map((resource, index) => (
-                            <span className='pl-2 first:pl-0'>{resource}</span>
-                        ))
-                    }  
+                <div className='px-2 flex justify-between text-white font-medium text-xs'>
+                    <p className='divide-x divide-white/70 divid space-x-2'>
+                        {
+                            resources.map((resource, index) => (
+                                <span key={index} className='pl-2 first:pl-0'>{resource}</span>
+                            ))
+                        }
                     </p>
-                    
-                    {/* <p>React, Styled Components, TailWind CSS, ReactQuery, REST APIs</p> */}
-                    {/* <p>Styled Components</p>
-                    <p>TailWind CSS</p>
-                    <p>ReactQuery</p>
-                    <p>REST APIs</p> */}
+
+
                 </div>
-                <div className={`flex mt-3 justify-${right && 'end '} `}>
-                    <img src={GithubIcon} className='text-white' />
+                <div className={`flex mt-3 justify-center ${right ? 'sm:justify-end ' : 'sm:justify-start '} space-x-3`}>
+                    <a href={github} target="_blank" className="cursor-pointer">
+                        <img src={GithubIcon} className=' w-6' />
+                    </a>
+
+                    <a href={demo} target="_blank" className="cursor-pointer">
+                        <img src={ComputerIcon} className=' w-6' />
+                    </a>
                 </div>
             </div>
         </div>

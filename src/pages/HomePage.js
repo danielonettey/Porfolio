@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import DynamicText from '../components/DynamicText'
 import Navbar from '../components/Navbar/Navbar'
-import PortfolioImage from '../assets/images/portofolio1.png'
-import KalanguImage from '../assets/images/kalangu.png'
 import ProjectCard from '../components/ProjectCard'
+import projects from '../data/projects'
+
 
 
 // https://brittanychiang.com/
@@ -48,26 +49,7 @@ const HomePage = () => {
 
     }, [welcome])
 
-    const projects = [
-        {
-            image: PortfolioImage,
-            name: 'Portfolio Project',
-            description: 'A web application (this project)  which showcases the portfolio of Daniel Nettey to potential recruiters and others to get to know more about the frontend developer.',
-            resources: ['React', 'Styled Components', 'TailWind CSS', 'ReactQuery', 'REST APIs']
-        },
-        {
-            image: KalanguImage,
-            name: 'Ashesi Kalangu',
-            description: 'A web application (this project)  which showcases the portfolio of Daniel Nettey to potential recruiters and others to get to know more about the frontend developer.',
-            resources: ['React', 'Styled Components', 'TailWind CSS', 'ReactQuery', 'REST APIs']
-        },
-        {
-            image: PortfolioImage,
-            name: 'Portfolio Project',
-            description: 'A web application (this project)  which showcases the portfolio of Daniel Nettey to potential recruiters and others to get to know more about the frontend developer.',
-            resources: ['React', 'Styled Components', 'TailWind CSS', 'ReactQuery', 'REST APIs']
-        }
-    ]
+    
 
 
     return (
@@ -75,17 +57,10 @@ const HomePage = () => {
             <div className='container mx-auto px-4 relative'>
                 <Navbar />
                 <div className='max-w-5xl mx-auto'>
-                    <div className='space-y-5  py-28'>
-                        <p className='text-xl text-secondary font-medium'>Hi, my name is</p>
-                        <p className='text-2xl sm:text-6xl md:text-7xl font-semibold leading-snug h-80'>
-                            {welcome.substring(0, 22)}
-                            <br />
-                            <span className='text-[#8A93AD]'>
-                                {welcome.substring(22, welcome.length)}
-                            </span>
-                            |
-                        </p>
-                        <p className='text-xl leading-8 max-w-4xl'>
+                    <div className='space-y-5 pt-28 pb-16 sm:py-28'>
+                        <p className='text-sm md:text-xl text-secondary font-medium'>Hi, my name is</p>
+                        <DynamicText subIndex={22} />
+                        <p className='text-sm md:text-xl md:leading-8 max-w-4xl'>
                             I am a frontend engineer with expertise in translating UI/UX wireframes to
                             exceptional and high quality code. Currently, I am focused on building
                             an online course learning platform for the
@@ -95,34 +70,34 @@ const HomePage = () => {
                     </div>
 
                     {/* Project Section  */}
-                    <div className='my-20 pt-20'>
-                        <p className='text-4xl font-semibold'>
+                    <div className='sm:my-20 sm:pt-20'>
+                        <p className='text-2xl sm:text-4xl font-semibold'>
                             <span className='text-secondary '>03. </span>
                             Projects
                         </p>
 
-                        <div className='mt-10 space-y-32'>
+                        <div className='mt-3 sm:mt-10 space-y-10 sm:space-y-32'>
                             {
                                 projects.map((project, index) => (
-                                    <ProjectCard right={index % 2 === 0} image={project.image} name={project.name}
-                                        description={project.description} resources={project.resources} />
+                                    <ProjectCard right={index % 2 === 0} image={project.image} name={project.name} github={project.github}
+                                       demo={project.demo} description={project.description} resources={project.resources} />
                                 ))
                             }
                         </div>
                     </div>
 
                     {/* Contact Section  */}
-                    <div className='space-y-2 max-w-3xl mt-40 pb-40 mx-auto text-center'>
-                        <p className='text-secondary font-medium text-lg'>What's Next?</p>
-                        <p className='text-5xl pb-3 font-semibold'>Get In Touch With Me</p>
-                        <p className='text-[#8A93AD] text-lg'>
+                    <div className='space-y-2 max-w-2xl mt-20 sm:mt-40 pb-20 sm:pb-40 mx-auto text-center'>
+                        <p className='text-secondary font-medium text-xs sm:text-lg'>What's Next?</p>
+                        <p className='text-2xl sm:text-5xl pb-3 font-semibold'>Get In Touch With Me</p>
+                        <p className='text-[#8A93AD] text-sm sm:text-lg'>
                             I am currently looking forward to joining an impact driven organization
-                            with a  <br /> strong vision and clear direction. Kindly reach out to me and
-                            I will do <br /> my best toget back to you as soon as possible.
+                            with a strong vision and clear direction. Kindly reach out to me and
+                            I will do my best toget back to you as soon as possible.
                         </p>
                         {/* Contact Me button  */}
-                        <div className='pt-10'>
-                            <a href='mailto:dnettey3@gmail.com' className='font-medium border border-secondary text-secondary px-6 rounded py-3'>
+                        <div className='pt-5 sm:pt-10'>
+                            <a href='mailto:dnettey3@gmail.com' className='font-medium border border-secondary text-secondary px-6 rounded py-3 text-xs sm:text-base'>
                                 Contact Me
                             </a>
                         </div>
