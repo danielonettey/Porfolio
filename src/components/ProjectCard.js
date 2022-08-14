@@ -22,14 +22,15 @@ const ProjectCard = ({ image, name, description, demo, github, resources, right 
                 </div>
 
                 {/* Resources  */}
-                <div className='px-2 flex justify-between text-white font-medium text-xs'>
-                    <p className='divide-x divide-white/70 space-x-2'>
+                <div className='px-2 text-white font-medium text-xs'>
+                    <div className={`flex flex-wrap w-full justify-center ${right ? 'sm:justify-end ' : 'sm:justify-start '} 
+                    divide-x divide-white/70 space-x-2`}>
                         {
                             resources.map((resource, index) => (
-                                <span key={index} className='pl-2 first:pl-0'>{resource}</span>
+                                <p key={index} className='pl-2 first:pl-0'>{resource}</p>
                             ))
                         }
-                    </p>
+                    </div>
                 </div>
 
                 {/* External Links  */}

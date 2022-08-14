@@ -4,18 +4,15 @@ import HomePage from "./pages/HomePage";
 
 const AppRoutes = () => {
   const element = useRoutes([
-    {
-      path: "",
-      element: <HomePage />
-    },
+    { path: "", element: <HomePage /> },
 
     // {
-    //   path: "",
-    //   element: <SideBar />,
+    //   path: "", element: <SideBar />,
     //   children: [
     //     { path: "/", element: <HomePage /> },
     //   ],
     // },
+    
   ]);
 
   return element;

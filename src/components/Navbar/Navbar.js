@@ -19,18 +19,15 @@ const Navbar = () => {
         {
             name: 'Projects',
             path: ''
-        },
-        {
-            name: 'Skills',
-            path: ''
-        },
+        }
     ]
     return (
-        <div className='container flex fixed justify-between items-center py-5 bg-backColor z-50 px-4'>
+        <div className='fixed w-full bg-backColor/95 z-50'>
+            <div className='container flex justify-between mx-auto items-center py-5  px-4'>
             <div className='w-10 h-10 rounded-full border  border-secondary flex items-center justify-center'>
                 <p className='text-secondary font-medium text-xl'>D</p>
             </div>
-            <div className='hidden lg:flex items-center space-x-10'>
+            <div className='hidden lg:flex items-center space-x-8'>
                 {
                     navLinks.map((navLink, index) => (
                         <button key={index} className='font-medium hover:text-[#8A93AD] py-2' onClick={() => navigate(navLink.path)}>
@@ -51,6 +48,7 @@ const Navbar = () => {
             </div>
 
 
+        </div>
         </div>
     )
 }
