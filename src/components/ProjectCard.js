@@ -1,5 +1,3 @@
-import { CodeIcon } from '@heroicons/react/outline'
-import { LinkIcon } from '@heroicons/react/solid'
 import React from 'react'
 import GithubIcon from '../assets/icons/GitHubIcon.png'
 import ComputerIcon from '../assets/icons/ComputerIcon.png'
@@ -8,11 +6,12 @@ import ComputerIcon from '../assets/icons/ComputerIcon.png'
 const ProjectCard = ({ image, name, description, demo, github, resources, right }) => {
     return (
         <div className='sm:flex items-center'>
-            {/* Image of Project */}
+            {/* Image */}
             <div className=' md:w-2/3'>
                 <img src={image} className='w-full z-0' />
             </div>
 
+            {/* Details  */}
             <div className={`md:w-1/3 text-center ${right ? 'sm:text-right' : 'sm:text-left order-first z-20'} `}>
                 <p className=' text-secondary font-medium pt-2 sm:py-2 text-xs sm:text-base'>Featured Project</p>
                 <p className='hover:text-secondary font-semibold text-xl sm:text-3xl'>{name}</p>
@@ -20,19 +19,20 @@ const ProjectCard = ({ image, name, description, demo, github, resources, right 
                     <p className='text-white/60 text-sm sm:text-[15px]'>
                         {description}
                     </p>
-                    {/* <p className='text-white pt-2'>This is hosted on the netlify platform.</p> */}
                 </div>
+
+                {/* Resources  */}
                 <div className='px-2 flex justify-between text-white font-medium text-xs'>
-                    <p className='divide-x divide-white/70 divid space-x-2'>
+                    <p className='divide-x divide-white/70 space-x-2'>
                         {
                             resources.map((resource, index) => (
                                 <span key={index} className='pl-2 first:pl-0'>{resource}</span>
                             ))
                         }
                     </p>
-
-
                 </div>
+
+                {/* External Links  */}
                 <div className={`flex mt-3 justify-center ${right ? 'sm:justify-end ' : 'sm:justify-start '} space-x-3`}>
                     <a href={github} target="_blank" className="cursor-pointer">
                         <img src={GithubIcon} className=' w-6' />

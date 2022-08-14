@@ -1,7 +1,7 @@
 import React from 'react'
-import GithubIcon from '../assets/icons/GitHubIcon.png'
-import LinkedInIcon from '../assets/icons/LinkedinIcon.png'
-import EmailIcon from '../assets/icons/EmailIcon.png'
+import GithubIcon from '../../assets/icons/GitHubIcon.png'
+import LinkedInIcon from '../../assets/icons/LinkedinIcon.png'
+import EmailIcon from '../../assets/icons/EmailIcon.png'
 
 
 const SocialsSection = () => {

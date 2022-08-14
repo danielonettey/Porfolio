@@ -17,11 +17,11 @@ const Navbar = () => {
             path: ''
         },
         {
-            name: 'Skills',
+            name: 'Projects',
             path: ''
         },
         {
-            name: 'Projects',
+            name: 'Skills',
             path: ''
         },
     ]
@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className='w-10 h-10 rounded-full border  border-secondary flex items-center justify-center'>
                 <p className='text-secondary font-medium text-xl'>D</p>
             </div>
-            <div className='hidden md:flex items-center space-x-10'>
+            <div className='hidden lg:flex items-center space-x-10'>
                 {
                     navLinks.map((navLink, index) => (
                         <button key={index} className='font-medium hover:text-[#8A93AD] py-2' onClick={() => navigate(navLink.path)}>
@@ -43,8 +43,8 @@ const Navbar = () => {
                     Contact Me
                 </a>
             </div>
-            
-            <div className='flex md:hidden mr-2'>
+
+            <div className='flex lg:hidden mr-2'>
                 <button>
                     <MenuAlt3Icon className='w-10 text-secondary' />
                 </button>
