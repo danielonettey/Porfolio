@@ -35,9 +35,9 @@ const SocialsSection = () => {
             </div>
 
             <div className='hidden sm:flex fixed bottom-0 flex-col items-center right-0'>
-                <div className='rotate-90 mb-28 text-sm text-white/80'>
+                <a href='mailto:danielonettey@gmail.com' className='rotate-90 mb-28 text-sm text-white/80 hover:text-secondary'>
                     danielonettey@gmail.com
-                </div>  
+                </a>  
                 <div className='h-28 w-px bg-white'></div>
             </div>
         </>

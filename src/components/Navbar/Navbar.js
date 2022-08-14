@@ -39,7 +39,7 @@ const Navbar = () => {
                         </button>
                     ))
                 }
-                <a href='mailto:dnettey3@gmail.com' className='font-medium border border-secondary text-secondary px-4 rounded py-2'>
+                <a href='mailto:danielonettey@gmail.com' className='font-medium border border-secondary text-secondary px-4 rounded py-2'>
                     Contact Me
                 </a>
             </div>
