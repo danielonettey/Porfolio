@@ -28,6 +28,12 @@ const HomePage = () => {
                 {/* Socials Section  */}
                 <SocialsSection />
             </div>
+
+            {/* cc  */}
+            <div className='text-center text-white/60 text-xs pb-5'>
+                Designed & Built by <span className='text-white'>Daniel Okaitei Nettey</span> <br />
+                Inspired by <a href='https://brittanychiang.com' target='_blank' className=' underline'>Brittany Chiang</a>
+            </div>
         </div>
     )
 }

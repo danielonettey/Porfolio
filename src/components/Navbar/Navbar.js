@@ -10,15 +10,15 @@ const Navbar = () => {
     const navLinks = [
         {
             name: 'About',
-            path: ''
+            path: '#about'
         },
         {
             name: 'Experience',
-            path: ''
+            path: '#experience'
         },
         {
             name: 'Projects',
-            path: ''
+            path: '#projects'
         }
     ]
     return (
@@ -30,13 +30,13 @@ const Navbar = () => {
             <div className='hidden lg:flex items-center space-x-8'>
                 {
                     navLinks.map((navLink, index) => (
-                        <button key={index} className='font-medium hover:text-[#8A93AD] py-2' onClick={() => navigate(navLink.path)}>
+                        <a href={navLink.path} key={index} className='hover:text-[#8A93AD] py-2 cursor-pointer' >
                             <span className='text-secondary'>{"0" + (index + 1) + ". "}</span>
                             {navLink.name}
-                        </button>
+                        </a>
                     ))
                 }
-                <a href='mailto:danielonettey@gmail.com' className='font-medium border border-secondary text-secondary px-4 rounded py-2'>
+                <a href='mailto:danielonettey@gmail.com' className=' border border-secondary text-secondary px-4 rounded py-2'>
                     Contact Me
                 </a>
             </div>

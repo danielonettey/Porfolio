@@ -7,7 +7,7 @@ const ExperienceSection = () => {
     const [currentTab, setCurrentTab] = useState(0);
 
     return (
-        <div className='mb-20 sm:my-20 sm:pt-20 max-w-3xl mx-auto'>
+        <div className='mb-20 sm:my-20 pt-10 sm:pt-20 max-w-3xl mx-auto'  id='experience'>
             <SubHeader title='Experience' index={2} />
 
             <div className='sm:grid sm:grid-cols-7'>

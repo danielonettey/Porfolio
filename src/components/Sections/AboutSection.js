@@ -12,7 +12,8 @@ import CPlusPlusIcon from '../../assets/icons/CPlusPlusIcon2.png'
 import FlutterIcon from '../../assets/icons/FlutterIcon2.png'
 import MySQLIcon from '../../assets/icons/MySQLIcon.png'
 import VBAIcon from '../../assets/icons/VBAIcon.png'
-
+import NetlifyIcon from '../../assets/icons/NetlifyIcon.png'
+import AmplifyIcon from '../../assets/icons/AmplifyIcon.png'
 import DjangoIcon from '../../assets/icons/django.jpeg'
 
 
@@ -22,7 +23,7 @@ import DjangoIcon from '../../assets/icons/django.jpeg'
 
 const AboutSection = () => {
     return (
-        <div className='mb-20 sm:mb-20 sm:pt-20'>
+        <div className='sm:pt-20' id='about'>
             <SubHeader title='About' index={1} />
 
             <div className='space-y-1.5 text-xs sm:text-base'>
@@ -67,6 +68,9 @@ const AboutSection = () => {
                     <img src={FigmaIcon} className="h-3/4 object-contain" />
                     <p className='font-medium'>Figma</p>
                 </div>
+
+                <img src={NetlifyIcon} />
+                <img src={AmplifyIcon} />
             </div>
         </div>
     )
