@@ -1,6 +1,6 @@
 import React from 'react'
 import projects from '../../data/projects'
-import ProjectCard from '../ProjectCard'
+import ProjectCard from './ProjectCard'
 import SubHeader from '../SubHeader'
 
 const ProjectSection = () => {

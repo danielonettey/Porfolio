@@ -17,10 +17,6 @@ import AmplifyIcon from '../../assets/icons/AmplifyIcon.png'
 import DjangoIcon from '../../assets/icons/django.jpeg'
 
 
-
-// , , Java, , , C++, 
-
-
 const AboutSection = () => {
     return (
         <div className='sm:pt-20' id='about'>

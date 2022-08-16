@@ -1,5 +1,5 @@
 import React from 'react'
-import DynamicText from '../DynamicText'
+import DynamicText from './DynamicText'
 
 const HeaderSection = () => {
     return (

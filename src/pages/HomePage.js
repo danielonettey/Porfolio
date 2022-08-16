@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import DynamicText from '../components/DynamicText'
+import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
-import ProjectCard from '../components/ProjectCard'
-import AboutSection from '../components/Sections/AboutSection'
-import ContactSection from '../components/Sections/ContactSection'
-import ExperienceSection from '../components/Sections/ExperienceSection'
-import HeaderSection from '../components/Sections/HeaderSection'
-import ProjectSection from '../components/Sections/ProjectSection'
-import SocialsSection from '../components/Sections/SocialsSection'
+import AboutSection from '../components/AboutSection/AboutSection'
+import ContactSection from '../components/ContactSection/ContactSection'
+import ExperienceSection from '../components/ExperienceSection/ExperienceSection'
+import HeaderSection from '../components/HeaderSection/HeaderSection'
+import ProjectSection from '../components/ProjectSection/ProjectSection'
+import SocialsSection from '../components/SocialsSection/SocialsSection'
 
 //Inspiration:  https://brittanychiang.com/
 

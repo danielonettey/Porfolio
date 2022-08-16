@@ -1,6 +1,6 @@
 import React from 'react'
-import GithubIcon from '../assets/icons/GitHubIcon.png'
-import ComputerIcon from '../assets/icons/ComputerIcon.png'
+import GithubIcon from '../../assets/icons/GitHubIcon.png'
+import ComputerIcon from '../../assets/icons/ComputerIcon.png'
 
 
 const ProjectCard = ({ image, name, description, demo, github, resources, right }) => {
