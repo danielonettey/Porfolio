@@ -8,7 +8,7 @@ const ProjectCard = ({ image, name, description, demo, github, resources, right 
         <div className='sm:flex items-center'>
             {/* Image */}
             <div className=' md:w-2/3'>
-                <img src={image} className='w-full z-0' />
+                <img src={image} className='w-full z-0' alt={name} />
             </div>
 
             {/* Details  */}
@@ -35,12 +35,12 @@ const ProjectCard = ({ image, name, description, demo, github, resources, right 
 
                 {/* External Links  */}
                 <div className={`flex mt-3 justify-center ${right ? 'sm:justify-end ' : 'sm:justify-start '} space-x-3`}>
-                    <a href={github} target="_blank" className="cursor-pointer">
-                        <img src={GithubIcon} className=' w-6' />
+                    <a href={github} target="_blank" rel="noreferrer" className="cursor-pointer">
+                        <img src={GithubIcon} className=' w-6' alt='Github Source Code'/>
                     </a>
 
-                    <a href={demo} target="_blank" className="cursor-pointer">
-                        <img src={ComputerIcon} className=' w-6' />
+                    <a href={demo} target="_blank" rel="noreferrer" className="cursor-pointer">
+                        <img src={ComputerIcon} className=' w-6' alt='Live Demo'/>
                     </a>
                 </div>
             </div>

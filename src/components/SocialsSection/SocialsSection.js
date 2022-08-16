@@ -7,14 +7,17 @@ import EmailIcon from '../../assets/icons/EmailIcon.png'
 const SocialsSection = () => {
     const socialLinks = [
         {
+            name: 'GitHub',
             image: GithubIcon,
             url: 'https://github.com/danielonettey/',
         },
         {
+            name: 'LinkedIn',
             image: LinkedInIcon,
             url: 'https://www.linkedin.com/in/danielnettey/',
         },
         {
+            name: 'Email',
             image: EmailIcon,
             url: 'mailto:dnettey3@gmail.com',
         },
@@ -24,8 +27,8 @@ const SocialsSection = () => {
             <div className='hidden lg:flex fixed bottom-0 space-y-6 left-10 flex-col items-center z-40'>
                 {
                     socialLinks.map((socialLink, index) => (
-                        <a href={socialLink.url} key={index} target="_blank" className="cursor-pointer">
-                            <img src={socialLink.image} className=' w-6' />
+                        <a href={socialLink.url} key={index} target="_blank" rel="noreferrer" className="cursor-pointer">
+                            <img src={socialLink.image} className=' w-6' alt={socialLink.name}/>
                         </a>
                     ))
                 }

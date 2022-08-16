@@ -1,11 +1,7 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import { MenuAlt3Icon, MenuIcon } from "@heroicons/react/solid";
-
-
+import { MenuAlt3Icon } from "@heroicons/react/solid";
 
 const Navbar = () => {
-    let navigate = useNavigate();
 
     const navLinks = [
         {

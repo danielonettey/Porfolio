@@ -42,31 +42,31 @@ const AboutSection = () => {
             </div>
 
             <div className='flex flex-wrap justify-center gap-7 sm:gap-10 mt-10 inner:h-10 inner:sm:h-20 inner:md:h-28'>
-                <img src={ReactIcon} className="" />
-                <img src={FlutterIcon} className="bg-white p-2" /> 
-                <img src={DjangoIcon} className="rounded-3xl" />
-                <img src={MySQLIcon} />
-                <img src={JavaIcon} />
-                <img src={VBAIcon} />
-                <img src={PythonIcon} />  
+                <img src={ReactIcon} alt="React" />
+                <img src={FlutterIcon} className="bg-white p-2" alt="Flutter"/> 
+                <img src={DjangoIcon} className="rounded-3xl" alt="Django"/>
+                <img src={MySQLIcon} alt="MySQL" />
+                <img src={JavaIcon} alt="Java"/>
+                <img src={VBAIcon} alt="VBA"/>
+                <img src={PythonIcon} alt="Python"/>  
                 <div className='h-28 text-center flex flex-col justify-between'>
-                    <img src={TailwindCSSIcon} className="h-2/3" />
+                    <img src={TailwindCSSIcon} className="h-2/3" alt="Tailwind CSS"/>
                     <p className='font-medium'>TailWind CSS</p>
                 </div>
-                <img src={HTMLCSSIcon} />
-                <img src={JavaScriptIcon} />
-                <img src={CPlusPlusIcon} />
+                <img src={HTMLCSSIcon} alt="HTML & CSS"/>
+                <img src={JavaScriptIcon} alt="JavaScript"/>
+                <img src={CPlusPlusIcon} alt="React"/>
                 <div className='h-28 text-center flex flex-col justify-between'>
-                    <img src={GitHubIconLG} className="h-3/4 object-contain" />
+                    <img src={GitHubIconLG} className="h-3/4 object-contain" alt="GitHub"/>
                     <p className='font-medium'>GitHub</p>
                 </div>
                 <div className='h-28 text-center flex flex-col justify-between'>
-                    <img src={FigmaIcon} className="h-3/4 object-contain" />
+                    <img src={FigmaIcon} className="h-3/4 object-contain" alt="Figma" />
                     <p className='font-medium'>Figma</p>
                 </div>
 
-                <img src={NetlifyIcon} />
-                <img src={AmplifyIcon} />
+                <img src={NetlifyIcon} alt="Netlify" />
+                <img src={AmplifyIcon} alt="Amplify"/>
             </div>
         </div>
     )
