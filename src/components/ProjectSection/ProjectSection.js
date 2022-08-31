@@ -6,7 +6,7 @@ import SubHeader from '../SubHeader'
 const ProjectSection = () => {
     return (
         <div className='sm:my-20 sm:pt-20' id='projects'>
-            <SubHeader title='Projects' index={3} />
+            <SubHeader title='Highlights' index={3} />
             
             <div className='space-y-10 sm:space-y-32'>
                 {

@@ -3,18 +3,18 @@ import GithubIcon from '../../assets/icons/GitHubIcon.png'
 import ComputerIcon from '../../assets/icons/ComputerIcon.png'
 
 
-const ProjectCard = ({ image, name, description, demo, github, resources, right }) => {
+const ProjectCard = ({ image, description, right }) => {
     return (
         <div className='sm:flex items-center'>
             {/* Image */}
             <div className=' md:w-2/3'>
-                <img src={image} className='w-full z-0' alt={name} />
+                <img src={image} className='w-full z-0' alt={"highlight"} />
             </div>
 
             {/* Details  */}
             <div className={`md:w-1/3 text-center ${right ? 'sm:text-right' : 'sm:text-left order-first z-20'} `}>
-                <p className=' text-secondary font-medium pt-2 sm:py-2 text-xs sm:text-base'>Featured Project</p>
-                <p className='hover:text-secondary font-semibold text-xl sm:text-3xl'>{name}</p>
+                {/* <p className=' text-secondary font-medium pt-2 sm:py-2 text-xs sm:text-base'>Featured Project</p>
+                <p className='hover:text-secondary font-semibold text-xl sm:text-3xl'>{name}</p> */}
                 <div className={`${right ? 'sm:-ml-32' : 'sm:-mr-32'} bg-[#112240] my-2 sm:my-4 px-2 py-4 sm:py-7 sm:px-5 rounded shadow`}>
                     <p className='text-white/60 text-sm sm:text-[15px]'>
                         {description}
@@ -22,7 +22,7 @@ const ProjectCard = ({ image, name, description, demo, github, resources, right 
                 </div>
 
                 {/* Resources  */}
-                <div className='px-2 text-white font-medium text-xs'>
+                {/* <div className='px-2 text-white font-medium text-xs'>
                     <div className={`flex flex-wrap w-full justify-center ${right ? 'sm:justify-end ' : 'sm:justify-start '} 
                     divide-x divide-white/70 space-x-2`}>
                         {
@@ -31,10 +31,10 @@ const ProjectCard = ({ image, name, description, demo, github, resources, right 
                             ))
                         }
                     </div>
-                </div>
+                </div> */}
 
                 {/* External Links  */}
-                <div className={`flex mt-3 justify-center ${right ? 'sm:justify-end ' : 'sm:justify-start '} space-x-3`}>
+                {/* <div className={`flex mt-3 justify-center ${right ? 'sm:justify-end ' : 'sm:justify-start '} space-x-3`}>
                     <a href={github} target="_blank" rel="noreferrer" className="cursor-pointer">
                         <img src={GithubIcon} className=' w-6' alt='Github Source Code'/>
                     </a>
@@ -42,7 +42,7 @@ const ProjectCard = ({ image, name, description, demo, github, resources, right 
                     <a href={demo} target="_blank" rel="noreferrer" className="cursor-pointer">
                         <img src={ComputerIcon} className=' w-6' alt='Live Demo'/>
                     </a>
-                </div>
+                </div> */}
             </div>
         </div>
     )

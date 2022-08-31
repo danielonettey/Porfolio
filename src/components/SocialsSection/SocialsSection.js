@@ -6,20 +6,20 @@ import EmailIcon from '../../assets/icons/EmailIcon.png'
 
 const SocialsSection = () => {
     const socialLinks = [
-        {
-            name: 'GitHub',
-            image: GithubIcon,
-            url: 'https://github.com/danielonettey/',
-        },
+        // {
+        //     name: 'GitHub',
+        //     image: GithubIcon,
+        //     url: 'https://github.com/danielonettey/',
+        // },
         {
             name: 'LinkedIn',
             image: LinkedInIcon,
-            url: 'https://www.linkedin.com/in/danielnettey/',
+            url: 'https://www.linkedin.com/in/ishmael-jaron-ofori-aboagye-115225151/',
         },
         {
             name: 'Email',
             image: EmailIcon,
-            url: 'mailto:dnettey3@gmail.com',
+            url: 'mailto:ishmael.oaboagye@gmail.com ',
         },
     ]
     return (
@@ -36,8 +36,8 @@ const SocialsSection = () => {
             </div>
 
             <div className='hidden lg:flex fixed bottom-0 flex-col items-center -right-10 z-40'>
-                <a href='mailto:danielonettey@gmail.com' className='rotate-90 mb-28 text-sm text-white/80 hover:text-secondary'>
-                    danielonettey@gmail.com
+                <a href='mailto:ishmael.oaboagye@gmail.com ' className='rotate-90 mb-28 text-sm text-white/80 hover:text-secondary'>
+                    ishmael.oaboagye@gmail.com 
                 </a>  
                 <div className='h-28 w-px bg-white'></div>
             </div>

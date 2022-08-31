@@ -1,31 +1,19 @@
-import PortfolioImage from '../assets/images/portofolio1.png'
-import KalanguImage from '../assets/images/kalangu.png'
-import AshBusImage from '../assets/images/AshBus.png'
+import Highlight1 from '../assets/images/Highlight1.jpg'
+import Highlight2 from '../assets/images/Highlight2.jpg'
+import Highlight3 from '../assets/images/Highlight3.jpg'
 
 const projects = [
     {
-        image: KalanguImage,
-        name: 'Ashesi Kalangu',
-        description: 'A web application (this project)  which showcases the portfolio of Daniel Nettey to potential recruiters and others to get to know more about the frontend developer.',
-        demo: 'https://kalangu.ashesi.edu.gh/',
-        github: '',
-        resources: ['React', 'Styled Components', 'TailWind CSS', 'ReactQuery', 'REST APIs', 'AWS Amplify']
+        image: Highlight1,
+        description: 'Interacting with stakeholders: venture capitalist, investment bank innovation hub at the maiden edition of the Israel Ghana Fintech Summit',
     },
     {
-        image: AshBusImage,
-        name: 'AshBus Project',
-        description: 'A web application (this project)  which showcases the portfolio of Daniel Nettey to potential recruiters and others to get to know more about the frontend developer.',
-        demo: 'http://dan3.pythonanywhere.com/',
-        github: 'https://github.com/danielonettey/Ashbus_web-2.0',
-        resources: ['React', 'Django', 'SQL', 'PythonAnywhere', 'REST APIs']
+        image: Highlight2,
+        description: 'Engagements with Economic & Trade Mission to support venture growth of high tech Israeli companies.'
     },
     {
-        image: PortfolioImage,
-        name: 'Portfolio Project',
-        description: 'A web application (this project)  which showcases the portfolio of Daniel Nettey to potential recruiters and others to get to know more about the frontend developer.',
-        demo: '#',
-        github: 'https://github.com/danielonettey/Portfolio',
-        resources: ['React', 'Styled Components', 'TailWind CSS', '']
+        image: Highlight3,
+        description: 'Forage Virtual Intersnhip Experience (projects): Bank of America Investment Banking Experience JP Morgan & Chase Commercial Banking Experience. CITI APAC Investment Banking',
     }
 ]
 

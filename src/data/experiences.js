@@ -1,65 +1,48 @@
 const experiences = [
     {
-        title: 'Software Engineer',
-        company: 'Kalangu - Ashesi',
-        duration: 'May 2022 - Present',
+        title: 'Venture Fellow &  Financial Analyst   ',
+        company: 'Ashesi Venture Accelerator',
+        duration: 'July 2021 - August 2022',
         roles: [
-            "Worked closely with UI/UX team to design and translate design wireframe to code for web application",
-            "Worked effectively with state management tools to optimize the speed and storage of web application",
-            "Lead the frontend team to properly segmented tasks for optimized productivity"
-        ],
-        extra:'UI/UX - User Interface/User experience'
-    },
-    {
-        title: 'Software Engineer',
-        company: 'AnalogTeams',
-        duration: 'February 2022 - May 2022',
-        roles: [
-            "Implemented exact replicas of design screens for android, iOS and web devices",
-            "Developed functionalities on both mobile and web applications to enable user communication",
-            "Worked closely with project manager to develop tickers and test applications"
+            "Focused on building venture strategy and financial valuation with Waaba Studios a premium Non-Fungible Token (NFT ), Web 3 & Animation Studio for investor-related pitches banks;  Stanbic Bank.",
+            "Successfully raised initial round (equity) with venture capitalists after modelling a 5-year valuation highlighting key EBITDA, Cash Flow Analysis."
         ]
     },
     {
-        title: 'Software Engineer',
-        company: 'Knack.it Corporation',
-        duration: 'January 2020 - July 2021',
+        title: 'Venture Growth & Deal Analyst ',
+        company: 'Developers.Institute',
+        duration: 'September 2021 - July 2022',
         roles: [
-            "Translated UI/UX design wireframes to actual code for its web application",
-            "Developed the iOS and android mobile applications for user game management",
-            "Collaborated with the UI/UX designer to ensure technical feasibility of designs"
+            "Led deal coordination for the growth of  Tel-Aviv  High Tech Consulting & Venture; “Developers.Institute” in a 75%  two-party co-investment & profitability entry into EMEA: West Africa. ",
+            "Developed complex due diligence, tech ecosystem report, financial forecast, pricing & risk quantification leading to venture growth into Ghana."
         ]
     },
     {
-        title: 'Software Engineer Intern',
-        company: 'Republic Bank',
-        duration: 'June 2020 - August 2020',
+        title: 'Fintech Venture Investor Coverage',
+        company: '24.QODE Company Limited',
+        duration: 'December  2021 -  June 2022 ',
         roles: [
-            "Designed and developed an iOS and android mobile application for staff referrals",
-            "Designed and developed a web application for the management of staff referrals",
-            "Worked closely with the head of IT to collect data, implement and test application"
+            "Extensive advisory to foreign Fintech Ventures on financial services industry trends, investment diligence and pilot partnerships in EMEA; West Africa.",
+            "Consulting for fintech fundraising Pre-Seed to Series A and stakeholder engagement with fintech venture accelerators and investment banks including Societe Generale Corporate & Investment Banking (SGCIB)  Innovation Hub & Home of Business."
         ]
     },
     {
-        title: 'Programming Tutor',
-        company: 'Ashesi University',
-        duration: 'January 2018 - December 2019',
+        title: 'Investment Analyst - New Market',
+        company: 'Robert Bosch GmbH',
+        duration: 'September 2020 - May 2021 ',
         roles: [
-            "Initiated fun-based teaching skills which motivated freshmen to learn python and MIT app inventor",
-            "Organized revision sessions for freshman python students which enabled 90% pass in the course",
-            "Worked closely with the lecturer to manage a class of over 200 students"
+            "Served as lead investments Analyst for German Power Tool's entry into the Housing Industry in Ghana; West Africa (EMEA) by developing financial models and sourcing investment avenues.", 
+            "Conducted ecosystem market research and developed risk management frameworks while working with cross-functional teams."
         ]
     },
     {
-        title: 'Software Engineer Intern',
-        company: 'AirtelTigo GH',
-        duration: 'July 2018 - September 2018 ',
+        title: 'Director ISWEST & Venture Sourcing Scout  ',
+        company: 'Nsesa Foundation ',
+        duration: 'June 2018 - January 2019    ',
         roles: [
-            "Built a java application to help engineers identify cell sites easily while on field",
-            "Used macros and *VBA to simplify processes in Ms Excel which improved the company’s efficiency",
-            "Analysed and reported on incidents at its cell sites across Ghana"
-        ],
-        extra: '*VBA - Visual Basic for Applications'
+            "Supported the Start-Up Ecosystem as Director of Iswest building four early-stage ventures in the area of health &  ed-tech structuring them for investor readiness.",
+            "Coordinated with angel investors, stakeholders, and resource persons from Google, Amazon, Facebook & Slack Technologies to mentor start-ups. "
+        ]
     }
 ]
 

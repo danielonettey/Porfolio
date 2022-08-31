@@ -13,7 +13,7 @@ const Navbar = () => {
             path: '#experience'
         },
         {
-            name: 'Projects',
+            name: 'Highlights',
             path: '#projects'
         }
     ]
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className='fixed w-full bg-backColor/95 z-50'>
             <div className='container flex justify-between mx-auto items-center py-5  px-4'>
             <div className='w-10 h-10 rounded-full border  border-secondary flex items-center justify-center'>
-                <p className='text-secondary font-medium text-xl'>D</p>
+                <p className='text-secondary font-medium text-xl'>I</p>
             </div>
             <div className='hidden lg:flex items-center space-x-8'>
                 {
@@ -32,7 +32,7 @@ const Navbar = () => {
                         </a>
                     ))
                 }
-                <a href='mailto:danielonettey@gmail.com' className=' border border-secondary text-secondary px-4 rounded py-2'>
+                <a href='mailto:ishmael.oaboagye@gmail.com ' className=' border border-secondary text-secondary px-4 rounded py-2'>
                     Contact Me
                 </a>
             </div>

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
 const DynamicText = () => {
-    const welcomeText = "Daniel Okaitei Nettey. I love implementing designs for applications!"
+    const welcomeText = "I am Ishmael Jaron Yaw Ofori Aboagye"
 
-    const [welcome, setWelcome] = useState("Daniel Okaitei Nettey. I love implementing designs for applications!")
+    const [welcome, setWelcome] = useState(welcomeText)
     const [wordIndex, setWordIndex] = useState(1)
     const [add, setAdd] = useState(true);
 
@@ -15,7 +15,7 @@ const DynamicText = () => {
             }
         }, 100);
 
-        if (wordIndex === 22) {
+        if (wordIndex === 10) {
             setAdd(true)
         }
 
@@ -43,11 +43,12 @@ const DynamicText = () => {
 
     return (
         <p className='text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold sm:!leading-tight  h-24 sm:h-36 md:h-48 lg:h-80'>
-            {welcome.substring(0, 22)}
-            <br />
+            {/* {welcome.substring(0, 22)} */}
+            {welcome}
+            {/* <br />
             <span className='text-[#8A93AD]'>
                 {welcome.substring(22, welcome.length)}
-            </span>
+            </span> */}
             |
         </p>
     )
